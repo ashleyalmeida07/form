@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-outter">
+       <div class="container-inner">
+          <h3>Submitted Successfully!</h3>
+          <h1>Thank You for Reaching Out</h1>
+          <p>We appreciate your feedback and will respond as soon as possible.</p>
+          <h2><b>Return to Home Page</b></h2>
+       </div>
+    </div>
+ </body>
+</html>
+
+<style>
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container-outter {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container-inner {
+    display: flex;
+    background-color: #f6f7fb;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px #784cfb; 
+    transform: scale(1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+h3 {
+    color: #784cfb;
+    font-size: 22px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 560px) {
+    .container-inner {
+        width: 80%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-inner {
+        width: 90%;  /* Even more narrow on very small screens */
+        padding: 10px;
+        box-shadow:0 2px 4px #784cfb ;  /* Remove shadow for smaller screens */
+        transform: scale(0.95);  /* Slight shrink effect */
+    }
+
+    h1 {
+        font-size: 20px;  /* Smaller font size */
+    }
+
+    h2 {
+        font-size: 14px;  /* Smaller h2 */
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .container-inner h1,
+    .container-inner p {
+        animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        60% {
+            transform: translateY(10px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(1px);
+        }
+    }
+}
+
+</style>
